@@ -4,10 +4,10 @@ import PackageDescription
 let package = Package(
     name: "Mobius",
     platforms: [
-        .iOS(.v12),
-        .macOS(.v10_13),
-        .tvOS(.v12),
-        .watchOS(.v4),
+        .iOS(.v13),
+        .macOS(.v10_15),
+        .tvOS(.v13),
+        .watchOS(.v6),
     ],
     products: [
         .library(name: "MobiusCore", targets: ["MobiusCore"]),
@@ -17,7 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-case-paths", .upToNextMinor(from: "0.10.1")),
-        .package(url: "https://github.com/Quick/Nimble", from: "11.0.0"),
+        .package(url: "https://github.com/Quick/Nimble", from: "12.0.0"),
         .package(url: "https://github.com/Quick/Quick", from: "5.0.1"),
     ],
     targets: [
